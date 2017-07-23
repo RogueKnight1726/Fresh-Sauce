@@ -1,0 +1,6 @@
+framework module Pods_Fresh_SauceUITests {
+  umbrella header "Pods-Fresh SauceUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
