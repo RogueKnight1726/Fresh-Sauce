@@ -10,6 +10,7 @@ import UIKit
 
 class CuisineView: UIView,UICollectionViewDelegateFlowLayout,UICollectionViewDelegate,UICollectionViewDataSource {
 
+    let cuisineItems = [#imageLiteral(resourceName: "chinese"),#imageLiteral(resourceName: "japanese"),#imageLiteral(resourceName: "italian")]
     let cellIdentifier = "CuisineCellIdentifier"
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,10 +25,11 @@ class CuisineView: UIView,UICollectionViewDelegateFlowLayout,UICollectionViewDel
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
-        return 4
+        return 3
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.cellIdentifier, for: indexPath) as! CuisineCell
+        cell.cuisineThumbnail.image = cuisineItems[indexPath.row]
         return cell;
     }
     

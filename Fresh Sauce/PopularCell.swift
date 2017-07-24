@@ -9,5 +9,9 @@
 import UIKit
 
 class PopularCell: UICollectionViewCell {
-    
+    @IBOutlet weak var popularImage: UIImageView!
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.popularImage.layer.cornerRadius = 10
+    }
 }

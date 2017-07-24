@@ -73,19 +73,19 @@
                                                 </constraints>
                                             </view>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KTz-f0-6RP" customClass="CuisineView" customModule="Fresh_Sauce" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="180" width="383" height="200"/>
+                                                <rect key="frame" x="0.0" y="184" width="383" height="200"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuisine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RM0-iv-RRp">
                                                         <rect key="frame" x="16" y="8" width="56.5" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CAB-f9-GU8">
-                                                        <rect key="frame" x="0.0" y="36.5" width="383" height="160"/>
+                                                        <rect key="frame" x="0.0" y="36.5" width="383" height="161"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="160" id="bnU-Gq-ftC"/>
+                                                            <constraint firstAttribute="height" constant="161" id="bnU-Gq-ftC"/>
                                                         </constraints>
                                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Orn-c1-7aJ">
                                                             <size key="itemSize" width="140" height="175"/>
@@ -95,13 +95,13 @@
                                                         </collectionViewFlowLayout>
                                                         <cells>
                                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CuisineCellIdentifier" id="ijL-Xl-OTh" customClass="CuisineCell" customModule="Fresh_Sauce" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="-7.5" width="140" height="175"/>
+                                                                <rect key="frame" x="0.0" y="-7" width="140" height="175"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                                                     <rect key="frame" x="0.0" y="0.0" width="140" height="175"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <subviews>
-                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bruschetta-887555_640.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3GX-hZ-nbg">
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chinese" translatesAutoresizingMaskIntoConstraints="NO" id="3GX-hZ-nbg">
                                                                             <rect key="frame" x="12" y="12" width="116" height="151"/>
                                                                         </imageView>
                                                                     </subviews>
@@ -112,11 +112,14 @@
                                                                     <constraint firstItem="3GX-hZ-nbg" firstAttribute="top" secondItem="ijL-Xl-OTh" secondAttribute="topMargin" constant="4" id="nZ8-uW-kkK"/>
                                                                     <constraint firstAttribute="trailingMargin" secondItem="3GX-hZ-nbg" secondAttribute="trailing" constant="4" id="pZ9-i6-d4D"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <outlet property="cuisineThumbnail" destination="3GX-hZ-nbg" id="vcP-D0-RGf"/>
+                                                                </connections>
                                                             </collectionViewCell>
                                                         </cells>
                                                     </collectionView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNy-hV-KR9">
-                                                        <rect key="frame" x="8" y="198.5" width="367" height="1"/>
+                                                        <rect key="frame" x="8" y="199.5" width="367" height="1"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="u30-nH-68x"/>
@@ -137,12 +140,12 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QiR-GO-CKh" customClass="PopularView" customModule="Fresh_Sauce" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="380" width="383" height="234"/>
+                                                <rect key="frame" x="0.0" y="384" width="383" height="234"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popular" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Glc-fX-2NM">
                                                         <rect key="frame" x="16" y="8" width="59" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GoL-pp-4Re" customClass="PopularCollectionViiew" customModule="Fresh_Sauce" customModuleProvider="target">
@@ -185,6 +188,9 @@
                                                                     <constraint firstAttribute="bottomMargin" secondItem="iE3-UP-xEG" secondAttribute="bottom" constant="28" id="qma-Pl-ufA"/>
                                                                     <constraint firstAttribute="trailingMargin" secondItem="iE3-UP-xEG" secondAttribute="trailing" constant="4" id="wZ1-kd-WUn"/>
                                                                 </constraints>
+                                                                <connections>
+                                                                    <outlet property="popularImage" destination="iE3-UP-xEG" id="v6t-XW-02a"/>
+                                                                </connections>
                                                             </collectionViewCell>
                                                         </cells>
                                                     </collectionView>
@@ -220,7 +226,7 @@
                                             <constraint firstItem="wEh-9p-ED5" firstAttribute="leading" secondItem="HTf-yM-pUP" secondAttribute="leading" id="avY-GZ-XUg"/>
                                             <constraint firstItem="KTz-f0-6RP" firstAttribute="centerX" secondItem="HTf-yM-pUP" secondAttribute="centerX" id="f8R-H6-FAB"/>
                                             <constraint firstItem="KTz-f0-6RP" firstAttribute="width" secondItem="HTf-yM-pUP" secondAttribute="width" id="js7-DU-JJL"/>
-                                            <constraint firstItem="KTz-f0-6RP" firstAttribute="top" secondItem="U9o-t7-hwN" secondAttribute="bottom" id="oyL-K8-uTp"/>
+                                            <constraint firstItem="KTz-f0-6RP" firstAttribute="top" secondItem="U9o-t7-hwN" secondAttribute="bottom" constant="4" id="oyL-K8-uTp"/>
                                             <constraint firstItem="wEh-9p-ED5" firstAttribute="top" secondItem="HTf-yM-pUP" secondAttribute="top" id="xIc-5Q-AZH"/>
                                         </constraints>
                                     </view>
@@ -260,5 +266,6 @@
     </scenes>
     <resources>
         <image name="bruschetta-887555_640.jpg" width="640" height="360"/>
+        <image name="chinese" width="16" height="16"/>
     </resources>
 </document>
