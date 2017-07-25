@@ -14,6 +14,8 @@
 		019630831F2336A000A36002 /* Fresh_SauceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019630821F2336A000A36002 /* Fresh_SauceTests.swift */; };
 		0196308E1F2336A000A36002 /* Fresh_SauceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0196308D1F2336A000A36002 /* Fresh_SauceUITests.swift */; };
 		0196309D1F23398D00A36002 /* bruschetta-887555_640.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0196309C1F23398D00A36002 /* bruschetta-887555_640.jpg */; };
+		01CBB8781F2699EF000935F2 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CBB8771F2699EF000935F2 /* Category.swift */; };
+		01CBB87A1F26FBB7000935F2 /* loginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CBB8791F26FBB7000935F2 /* loginController.swift */; };
 		01E311901F23820A00EF9FD6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01E3118F1F23820A00EF9FD6 /* GoogleService-Info.plist */; };
 		01E311941F23840A00EF9FD6 /* NetworkCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E311931F23840A00EF9FD6 /* NetworkCalls.swift */; };
 		01E311971F23866400EF9FD6 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E311961F23866400EF9FD6 /* homeViewController.swift */; };
@@ -63,6 +65,8 @@
 		0196308D1F2336A000A36002 /* Fresh_SauceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fresh_SauceUITests.swift; sourceTree = "<group>"; };
 		0196308F1F2336A000A36002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0196309C1F23398D00A36002 /* bruschetta-887555_640.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bruschetta-887555_640.jpg"; sourceTree = "<group>"; };
+		01CBB8771F2699EF000935F2 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		01CBB8791F26FBB7000935F2 /* loginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginController.swift; sourceTree = "<group>"; };
 		01E3118F1F23820A00EF9FD6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		01E311931F23840A00EF9FD6 /* NetworkCalls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkCalls.swift; sourceTree = "<group>"; };
 		01E311961F23866400EF9FD6 /* homeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				01E311961F23866400EF9FD6 /* homeViewController.swift */,
+				01CBB8791F26FBB7000935F2 /* loginController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				01E311A21F238A2900EF9FD6 /* SpotLight.swift */,
+				01CBB8771F2699EF000935F2 /* Category.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -552,6 +558,7 @@
 				01FF61181F249F97000904AF /* PopularCollectionViiew.swift in Sources */,
 				01E311A31F238A2900EF9FD6 /* SpotLight.swift in Sources */,
 				01FF61161F249F6A000904AF /* PopularCell.swift in Sources */,
+				01CBB87A1F26FBB7000935F2 /* loginController.swift in Sources */,
 				01E3119B1F23878400EF9FD6 /* SpotlightCollectionView.swift in Sources */,
 				01FF61131F2488BF000904AF /* CuisineCell.swift in Sources */,
 				01E311A01F23899E00EF9FD6 /* SpotlightCell.swift in Sources */,
@@ -559,6 +566,7 @@
 				01E311941F23840A00EF9FD6 /* NetworkCalls.swift in Sources */,
 				01FF610B1F2469F6000904AF /* SpotlightView.swift in Sources */,
 				01FF610D1F24867D000904AF /* CuisineView.swift in Sources */,
+				01CBB8781F2699EF000935F2 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

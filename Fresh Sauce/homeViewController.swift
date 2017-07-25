@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class homeViewController: UIViewController {
 
@@ -14,6 +16,7 @@ class homeViewController: UIViewController {
     @IBOutlet weak var popularCollectionView: PopularCollectionViiew!
     @IBOutlet weak var cuisineView: CuisineView!
     @IBOutlet weak var cuisineColectionView: UICollectionView!
+
     @IBOutlet weak var spotlightView: SpotlightView!
     @IBOutlet weak var spotlightCollectionView: SpotlightCollectionView!
     let network:NetworkCalls = NetworkCalls()
@@ -31,11 +34,9 @@ class homeViewController: UIViewController {
         self.spotlightCollectionView.delegate = self.spotlightView
         self.spotlightCollectionView.dataSource = self.spotlightView
         
-        self.cuisineColectionView.delegate = self.cuisineView
-        self.cuisineColectionView.dataSource = self.cuisineView
-        
         self.popularCollectionView.delegate = self.popularView
         self.popularCollectionView.dataSource = self.popularView
+        
     }
     
 

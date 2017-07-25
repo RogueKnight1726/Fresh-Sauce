@@ -32,7 +32,7 @@ class SpotlightView: UIView,UICollectionViewDataSource,UICollectionViewDelegate,
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
         let screenSize = UIScreen.main.bounds
-        return CGSize(width: screenSize.width, height: 180)
+        return CGSize(width: screenSize.width + 4, height: 180)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat{
         return 0

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BaC-cV-nsJ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,59 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Login Controller-->
+        <scene sceneID="7mr-v5-2lG">
+            <objects>
+                <viewController id="BaC-cV-nsJ" customClass="loginController" customModule="Fresh_Sauce" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pjc-K4-P2u"/>
+                        <viewControllerLayoutGuide type="bottom" id="qfN-rR-b8c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cfP-MK-ztr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="freshsauce@gmail.com" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="POj-xp-nSz">
+                                <rect key="frame" x="16" y="81" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ezezez" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5pc-ok-Lrl">
+                                <rect key="frame" x="16" y="119" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rzU-gj-XJv">
+                                <rect key="frame" x="164" y="169" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="loginNow:" destination="BaC-cV-nsJ" eventType="touchUpInside" id="nha-EH-Wiy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5pc-ok-Lrl" firstAttribute="top" secondItem="POj-xp-nSz" secondAttribute="bottom" constant="8" id="6By-m0-Of9"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="5pc-ok-Lrl" secondAttribute="leading" id="By2-VI-48Y"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="POj-xp-nSz" secondAttribute="leading" id="SSX-ZA-2vJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5pc-ok-Lrl" secondAttribute="trailing" id="UYC-hB-6PI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="POj-xp-nSz" secondAttribute="trailing" id="YV6-0A-aRC"/>
+                            <constraint firstItem="POj-xp-nSz" firstAttribute="top" secondItem="Pjc-K4-P2u" secondAttribute="bottom" constant="61" id="iic-Ll-JoU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passwordText" destination="5pc-ok-Lrl" id="dNo-Ir-3kl"/>
+                        <outlet property="usernameText" destination="POj-xp-nSz" id="fpT-lk-Mal"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="LoginSegue" id="MJD-OT-ddd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vd0-nY-fGI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-692" y="130.88455772113943"/>
+        </scene>
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -48,7 +101,7 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="366" height="152"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <subviews>
-                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bruschetta-887555_640.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="FCa-XU-FOb">
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bruschetta-887555_640.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="FCa-XU-FOb">
                                                                             <rect key="frame" x="0.0" y="0.0" width="366" height="152"/>
                                                                         </imageView>
                                                                     </subviews>
@@ -73,7 +126,7 @@
                                                 </constraints>
                                             </view>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KTz-f0-6RP" customClass="CuisineView" customModule="Fresh_Sauce" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="184" width="383" height="200"/>
+                                                <rect key="frame" x="0.0" y="180" width="383" height="200"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuisine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RM0-iv-RRp">
                                                         <rect key="frame" x="16" y="8" width="56.5" height="20.5"/>
@@ -101,18 +154,28 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="140" height="175"/>
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <subviews>
-                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chinese" translatesAutoresizingMaskIntoConstraints="NO" id="3GX-hZ-nbg">
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3GX-hZ-nbg">
                                                                             <rect key="frame" x="12" y="12" width="116" height="151"/>
                                                                         </imageView>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Bz-Ux-zwd">
+                                                                            <rect key="frame" x="12" y="134" width="116" height="18"/>
+                                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                                            <color key="textColor" cyan="0.23842677474021912" magenta="0.11768201738595963" yellow="0.039699863642454147" black="0.26514340753424659" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
                                                                     </subviews>
                                                                 </view>
                                                                 <constraints>
+                                                                    <constraint firstItem="2Bz-Ux-zwd" firstAttribute="top" secondItem="3GX-hZ-nbg" secondAttribute="bottom" constant="-29" id="1rm-ba-Bq2"/>
                                                                     <constraint firstItem="3GX-hZ-nbg" firstAttribute="leading" secondItem="ijL-Xl-OTh" secondAttribute="leadingMargin" constant="4" id="HND-Ai-TVD"/>
+                                                                    <constraint firstItem="2Bz-Ux-zwd" firstAttribute="trailing" secondItem="3GX-hZ-nbg" secondAttribute="trailing" id="gma-3X-gdR"/>
                                                                     <constraint firstAttribute="bottomMargin" secondItem="3GX-hZ-nbg" secondAttribute="bottom" constant="4" id="iG0-rJ-vhk"/>
                                                                     <constraint firstItem="3GX-hZ-nbg" firstAttribute="top" secondItem="ijL-Xl-OTh" secondAttribute="topMargin" constant="4" id="nZ8-uW-kkK"/>
                                                                     <constraint firstAttribute="trailingMargin" secondItem="3GX-hZ-nbg" secondAttribute="trailing" constant="4" id="pZ9-i6-d4D"/>
+                                                                    <constraint firstItem="2Bz-Ux-zwd" firstAttribute="leading" secondItem="3GX-hZ-nbg" secondAttribute="leading" id="zch-E2-JX4"/>
                                                                 </constraints>
                                                                 <connections>
+                                                                    <outlet property="categoryText" destination="2Bz-Ux-zwd" id="ixC-FW-IyL"/>
                                                                     <outlet property="cuisineThumbnail" destination="3GX-hZ-nbg" id="vcP-D0-RGf"/>
                                                                 </connections>
                                                             </collectionViewCell>
@@ -138,9 +201,12 @@
                                                     <constraint firstItem="CAB-f9-GU8" firstAttribute="centerX" secondItem="KTz-f0-6RP" secondAttribute="centerX" id="q8p-lt-j9z"/>
                                                     <constraint firstItem="CAB-f9-GU8" firstAttribute="width" secondItem="KTz-f0-6RP" secondAttribute="width" id="vsh-hu-MAD"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outlet property="cuisineColectionView" destination="CAB-f9-GU8" id="2YX-xh-2IN"/>
+                                                </connections>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QiR-GO-CKh" customClass="PopularView" customModule="Fresh_Sauce" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="384" width="383" height="234"/>
+                                                <rect key="frame" x="0.0" y="380" width="383" height="234"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popular" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Glc-fX-2NM">
                                                         <rect key="frame" x="16" y="8" width="59" height="21"/>
@@ -226,7 +292,7 @@
                                             <constraint firstItem="wEh-9p-ED5" firstAttribute="leading" secondItem="HTf-yM-pUP" secondAttribute="leading" id="avY-GZ-XUg"/>
                                             <constraint firstItem="KTz-f0-6RP" firstAttribute="centerX" secondItem="HTf-yM-pUP" secondAttribute="centerX" id="f8R-H6-FAB"/>
                                             <constraint firstItem="KTz-f0-6RP" firstAttribute="width" secondItem="HTf-yM-pUP" secondAttribute="width" id="js7-DU-JJL"/>
-                                            <constraint firstItem="KTz-f0-6RP" firstAttribute="top" secondItem="U9o-t7-hwN" secondAttribute="bottom" constant="4" id="oyL-K8-uTp"/>
+                                            <constraint firstItem="KTz-f0-6RP" firstAttribute="top" secondItem="U9o-t7-hwN" secondAttribute="bottom" id="oyL-K8-uTp"/>
                                             <constraint firstItem="wEh-9p-ED5" firstAttribute="top" secondItem="HTf-yM-pUP" secondAttribute="top" id="xIc-5Q-AZH"/>
                                         </constraints>
                                     </view>
@@ -251,7 +317,6 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="720"/>
                     <connections>
-                        <outlet property="cuisineColectionView" destination="CAB-f9-GU8" id="SaZ-ug-YrS"/>
                         <outlet property="cuisineView" destination="KTz-f0-6RP" id="3AR-7d-vGi"/>
                         <outlet property="popularCollectionView" destination="GoL-pp-4Re" id="SmT-Nb-rO9"/>
                         <outlet property="popularView" destination="QiR-GO-CKh" id="TkE-Ed-tfa"/>
@@ -266,6 +331,5 @@
     </scenes>
     <resources>
         <image name="bruschetta-887555_640.jpg" width="640" height="360"/>
-        <image name="chinese" width="16" height="16"/>
     </resources>
 </document>
