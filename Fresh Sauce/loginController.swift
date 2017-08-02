@@ -31,7 +31,6 @@ class loginController: UIViewController {
                 return
             }
             self.performSegue(withIdentifier: "LoginSegue", sender: self)
-            //            self.dismiss(animated: true, completion: nil)
             
         })
 

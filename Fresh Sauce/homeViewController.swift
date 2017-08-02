@@ -31,13 +31,19 @@ class homeViewController: UIViewController {
     }
     
     private func initiateViews(){
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
         self.spotlightCollectionView.delegate = self.spotlightView
         self.spotlightCollectionView.dataSource = self.spotlightView
         
         self.popularCollectionView.delegate = self.popularView
         self.popularCollectionView.dataSource = self.popularView
         
+        
+        self.cuisineView.parent = self
+        
     }
+    
+    
     
 
 }
@@ -49,3 +55,5 @@ extension UIColor{
         
     }
 }
+
+

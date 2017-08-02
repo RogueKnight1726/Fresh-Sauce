@@ -14,6 +14,7 @@ class CuisineView: UIView,UICollectionViewDelegateFlowLayout,UICollectionViewDel
     
     @IBOutlet weak var cuisineColectionView: UICollectionView!
 
+    var parent: homeViewController?
     var categoriesDictionary = [String:String]()
     let cellIdentifier = "CuisineCellIdentifier"
     var categoriesList : [Category] = []
@@ -70,6 +71,13 @@ class CuisineView: UIView,UICollectionViewDelegateFlowLayout,UICollectionViewDel
             
             
         }, withCancel: nil)
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
+        print("Hello")
+        if let vc3 = parent?.storyboard?.instantiateViewController(withIdentifier: "CuisineDetail") as? CuisineDetail {
+            self.parent?.present(vc3, animated: true, completion: nil)
+        }
+        
     }
 
 
