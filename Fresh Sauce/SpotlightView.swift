@@ -22,7 +22,7 @@ class SpotlightView: UIView,UICollectionViewDataSource,UICollectionViewDelegate,
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
-        return 2
+        return 7
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: self.cellIdentifier, for: indexPath) as! SpotlightCell
@@ -31,11 +31,15 @@ class SpotlightView: UIView,UICollectionViewDataSource,UICollectionViewDelegate,
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
+<<<<<<< HEAD
         
 
         let width  = self.frame.size.width;
         
         return CGSize(width: width, height: 180)
+=======
+        return CGSize(width: collectionView.frame.width, height: 180)
+>>>>>>> e730120df9a2709d600a1a5e2dd0e5914aae335b
     }
     
     
