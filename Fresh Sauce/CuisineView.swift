@@ -20,6 +20,7 @@ class CuisineView: UIView,UICollectionViewDelegateFlowLayout,UICollectionViewDel
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.cuisineColectionView.isHidden = true
         self.cuisineColectionView.delegate = self
         self.cuisineColectionView.dataSource = self
         fetchCategories()
@@ -64,6 +65,7 @@ class CuisineView: UIView,UICollectionViewDelegateFlowLayout,UICollectionViewDel
                 self.categoriesList.append(category)
                 print(self.categoriesList)
                 DispatchQueue.main.async {
+                    self.cuisineColectionView.isHidden = false
                     self.cuisineColectionView.reloadData()
                 }
             }
